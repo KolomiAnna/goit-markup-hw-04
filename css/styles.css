@@ -1,0 +1,206 @@
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--link-color: #2196f3;
+	--primary-bg-color: #ffffff;
+	--secondary-bg-color: #2f303a;
+	--third-bg-color: #f5f4fa;
+	--logo-color: #000000;
+}
+
+body {
+	background: var(-primary-bg-color);
+	color: var(--primary-text-color);
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+
+}
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+
+/* ----------ШАПКА------------ */
+/* Логотип */
+.logo-head.link,
+.footer-logo.link {font-family: "Raleway";
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+}
+
+.logo-head {
+	color: var(--logo-color);
+}
+
+.web {
+	color: var(--link-color);
+}
+
+/* Навігація */
+.link {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
+}
+
+.link:hover,
+.link:focus {
+	color: var(--link-color);
+}
+.current {
+	color: var(--link-color);
+}
+
+/* Контакти */
+.contact.link {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);}
+
+
+.head .contact:hover,
+.head .contact:focus {
+	color: var(--link-color);
+}
+
+/* -------------ТІЛО------------ */
+/* Слоган*/
+
+.slogan {
+	background-color: var(--secondary-bg-color);
+	width: 1600px;
+	height: 600px;
+}
+
+.slogan-title {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--primary-bg-color);
+}
+
+.button {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	color: var(--primary-bg-color);
+	background: var(--link-color);
+}
+
+/* Характеристика нашої роботи */
+
+.section-title {
+	color: var(--title-text-color);
+}
+.section-title.characteristic {
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	line-height: 1.71;
+}
+
+/* Чим ми займаємося */
+.section-title.do {
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
+
+/* Наша команда */
+
+.section.comand {
+	background-color: var(--third-bg-color);
+}
+
+.section-title.name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+/* ----------ПІДВАЛ-----------*/
+
+.footer-logo.link {
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+
+.studio {
+	color: var(--primary-bg-color);
+}
+
+.work {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.footer {
+	width: 1600px;
+	height: 252px;
+	left: 0px;
+	top: 2094px;
+	background: var(--secondary-bg-color);
+}
+
+.maps.link,
+.contact.link {
+	line-height: 1.71;
+	font-style: normal;
+	font-weight: normal;
+}	
+
+.maps.link {color: var(--primary-bg-color);
+}
+
+
+/*  ----....-----ПОРТФОЛІО-----....-----*/
+
+/* Кнопки*/
+.button-list {
+	font-family: "Roboto";
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	background: var(--third-bg-color);
+	color: var(title-text-color);
+}
+
+.button-list:focus,
+.button-list:hover,
+.button-list:active {
+	color: var(--primary-bg-color);
+	background: var(--link-color);
+}
+
+/* Проекти */
+.work-name {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--title-text-color);
+}
+
+.job {
+	font-size: 16px;
+	line-height: 1.9;
+}
