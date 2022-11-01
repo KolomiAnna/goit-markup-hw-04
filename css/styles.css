@@ -153,7 +153,7 @@ padding-bottom: 32px;
 
 .slogan {
 	background-color: var(--secondary-bg-color);
-	width: 1600px;
+	/* width: 1600px; */
 	height: 600px;
 }
 
@@ -294,7 +294,7 @@ rgba(0, 0, 0, 0.12) } */
 }
 
 .footer-section {
-	width: 1600px;
+	/* width: 1600px; */
 	/* left: 0px;
 	top: 2094px; */
 	background: var(--secondary-bg-color);
