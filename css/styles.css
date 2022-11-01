@@ -1,3 +1,9 @@
+/* html{box-sizing: border-box;}
+
+*,
+*::before,
+*::after{box-sizing:inherit;} */
+
 :root {
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
@@ -14,20 +20,69 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.03em;
-
 }
+
+
+/* -----RESET----- */
 
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
 .link {
 	text-decoration: none;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.container-footer,
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 3px solid rgb(46, 2, 2);
+}
+
+.section,
+.section-character {
+	outline: 1px dotted rgb(132, 132, 221);
+}
+
+.list {
+	display: flex;
+}
+
 /* ----------ШАПКА------------ */
+.header-container{display: flex;
+align-items: center;}
+
+
 /* Логотип */
+.logo-head.link{margin-right: 93px;}
+
 .logo-head.link,
-.footer-logo.link {font-family: "Raleway";
+.footer-logo.link {
+	font-family: "Raleway";
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
@@ -57,16 +112,39 @@ body {
 	color: var(--link-color);
 }
 
+/* МЕНЮ */
+/* .list.menu {
+	justify-content: space-between;
+} */
+
+.list.menu{align-items: center;
+gap: 30px;}
+
+.link-studio,
+.link-contact,
+.link.current,
+.link-portfolio,
+.contact-header
+{display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
 /* Контакти */
-.contact.link {
+
+.contacts.list{	margin-left:auto;} 
+
+.contact-header:first-child{margin-right: 50px;}
+
+.contact-header {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	color: var(--primary-text-color);}
+	color: var(--primary-text-color);
+}
 
-
-.head .contact:hover,
-.head .contact:focus {
+.contact:hover,
+.contact:focus {
 	color: var(--link-color);
 }
 
@@ -80,6 +158,7 @@ body {
 }
 
 .slogan-title {
+	width: 696px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -87,15 +166,28 @@ body {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--primary-bg-color);
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 .button {
 	font-family: "Roboto";
-	font-weight: 700;
 	font-size: 16px;
+	border: 0px;
+	border-radius: 4px;
+}
+
+.btn-service {
+	min-width: 216px;
+	min-height: 50px;
+	padding: 10px 32px;
+	font-weight: 700;
 	line-height: 1.87;
 	color: var(--primary-bg-color);
 	background: var(--link-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	display: block;
+	margin: auto;
 }
 
 /* Характеристика нашої роботи */
@@ -103,26 +195,65 @@ body {
 .section-title {
 	color: var(--title-text-color);
 }
+
 .section-title.characteristic {
 	line-height: 1.14;
 	text-transform: uppercase;
 }
 
+.iten-character:not(:last-child){margin-right: 30px;}
+
 .paragraph {
 	line-height: 1.71;
 }
 
+.section-character {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
 /* Чим ми займаємося */
+
+.activity-pic.list,
+.list-comand
+{gap: 30px;}
+
+.section.do {
+	padding-bottom: 94px;
+}
+
 .section-title.do {
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
+	padding-bottom: 50px;
+}
+.section-title.characteristic,
+.section-title.name {
+	margin-bottom: 10px;
 }
 
 /* Наша команда */
+/* .comand-border{
+	border-radius: 3px ;
+
+	Radius: 3px
+Offset: 0px, 1px
+rgba(0, 0, 0, 0.12) } */
+
+.comand-item{background-color:var(--primary-bg-color);
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 3px ;
+}
+
+
+
+.item-img{margin-bottom: 30px;}
 
 .section.comand {
 	background-color: var(--third-bg-color);
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .section-title.name {
@@ -135,11 +266,20 @@ body {
 
 /* ----------ПІДВАЛ-----------*/
 
+
+/* щоб тел  та адрес стали олин під одним */
+
+.list-footer{display: inline; 
+}
+
+
 .footer-logo.link {
+	display: block;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+	margin-bottom: 20px;
 }
 
 .studio {
@@ -153,51 +293,124 @@ body {
 	letter-spacing: 0.03em;
 }
 
-.footer {
+.footer-section {
 	width: 1600px;
-	height: 252px;
-	left: 0px;
-	top: 2094px;
+	/* left: 0px;
+	top: 2094px; */
 	background: var(--secondary-bg-color);
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .maps.link,
-.contact.link {
+.contact-footer{
+display: block;
 	line-height: 1.71;
-	font-style: normal;
 	font-weight: normal;
-}	
-
-.maps.link {color: var(--primary-bg-color);
+	font-style: normal;
 }
+
+.maps.link {
+			color: var(--primary-bg-color);}
+
+/* .list-footer {color:var(--primary-text-color);} */
+
+.contact-footer.link{color:rgba(255, 255, 255, 0.6);}
+
+.contact-footer.link:hover,
+.contact-footer.link:focus,
+.maps.link:hover,
+.maps.link:focus{
+	color: var(--link-color);
+}
+
+.maps.link,
+.contact-footer.link.marg{margin-bottom: 9px;}
+
+
 
 
 /*  ----....-----ПОРТФОЛІО-----....-----*/
 
+.head{
+border-right: 1px solid #ECECEC;
+}
+
+.list.projects {
+	margin-right: 0;
+} 
+
+
 /* Кнопки*/
-.button-list {
-	font-family: "Roboto";
+.btn-list {
+	padding: 6px 22px; 
 	font-weight: 500;
-	font-size: 16px;
 	line-height: 1.62;
-	text-align: center;
 	background: var(--third-bg-color);
 	color: var(title-text-color);
 }
 
-.button-list:focus,
-.button-list:hover,
-.button-list:active {
+.btn-list:first-child {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.btn-list:focus,
+.btn-list:hover,
+.btn-list:active {
 	color: var(--primary-bg-color);
 	background: var(--link-color);
 }
 
-/* Проекти */
+.products.list{
+	gap: 8px;
+justify-content: center;
+margin-bottom: 50px;
+}
+
+/* --------ПРОЕКТИ------- */
+/* хочу проекти поставити по 3 картинки в три рядки */
+/* 
+.header-container,
+.container-footer,
+.container-portfolio{
+margin-left: auto;
+margin-right: auto; */
+
+/*.img-project{margin-right: 0;
+ padding-right: 0;} */
+
+
+
+.list.projects {
+	display: block;
+	display: flex ;
+	flex-wrap: wrap;
+	gap: 30px;}
+
+	
+.project-item{flex-basis: calc((100%-30px * 2) / 3);} 
+
+/*  НЕ   ПРАЦЮЄ  к-ць елементів в рядок працює */
+
+/* img.img-project,
+.list.projects,
+.project-item{
+	margin-right: 0;
+	padding-right: 0; }*/
+
+
+
+
+/* .img-project{margin-bottom: 20px;} */
+
+
 .work-name {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--title-text-color);
+	margin-bottom: 4px;
 }
 
 .job {
