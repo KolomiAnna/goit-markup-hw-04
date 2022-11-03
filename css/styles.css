@@ -157,6 +157,21 @@ padding-bottom: 32px;
 	height: 600px;
 }
 
+
+/* НЕ МОЖУ ВІДЦЕНТРУВАТИ СЛОГАН */
+/* .section.slogan{
+	display: block;
+	display: flex;
+	align-items:center;} */
+
+/* .container.slogan{
+	display: flex;
+	align-items:center;
+} */
+
+/* .container.slogan{margin-top: auto;
+margin-bottom: auto;}    не  працює */
+
 .slogan-title {
 	width: 696px;
 	font-weight: 900;
@@ -402,7 +417,9 @@ margin-right: auto; */
 
 
 
-/* .img-project{margin-bottom: 20px;} */
+.img-project{margin-bottom: 20px;
+padding-right: 0; 
+}
 
 
 .work-name {
