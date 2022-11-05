@@ -178,6 +178,7 @@ img {
 	font-size: 16px;
 	border: 0px;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .btn-service {
@@ -196,17 +197,23 @@ img {
 
 /* Характеристика нашої роботи */
 
+.paragraph {
+	width: 271px;
+}
+
 .section-title {
 	color: var(--title-text-color);
 }
 
 .section-title.characteristic {
+	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 }
 
-.iten-character:not(:last-child) {
-	margin-right: 30px;
+.list.character {
+	display: flex;
+	gap: 30px;
 }
 
 .paragraph {
@@ -385,11 +392,13 @@ img {
 .project-item {
 	max-width: 370px;
 	flex-basis: calc((100%-30px * 3) / 3);
-	border: 1px solid #eeeeee;
 }
 
 .item-project {
 	padding: 20px 24px;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
 }
 
 .work-name {
